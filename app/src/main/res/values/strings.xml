@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Match Schedule</string>
+    <string name="detail_activity">Detail Match</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="versus">vs</string>
+    <string name="shoots">Shoots</string>
+    <string name="goals">Goals</string>
+    <string name="yellow_cards">Yellow Cards</string>
+    <string name="red_cards">Red Cards</string>
+    <string name="goalkeeper">Goalkeeper</string>
+    <string name="defense">Defense</string>
+    <string name="midfield">Midfield</string>
+    <string name="forward">Forward</string>
+    <string name="subtitutes">Subtitutes</string>
+    <string name="statistics">Statistics</string>
+    <string name="line_up">Line Up</string>
+    <string name="bannerawayteam">BannerAwayTeam</string>
+    <string name="bannerhometeam">BannerHomeTeam</string>
+    <string name="overview">Overview</string>
+    <string name="title_activity_home">Match Schedule</string>
+    <string name="favorite">Favorite</string>
+    <string name="added_to_favorite_db">Added to favorite</string>
+    <string name="removed_to_favorite_db">Removed from favorite</string>
+    <string name="no_favorite_match">No Favorite Match</string>
+    <string name="message_failure_request">"There was a data retrieval error"</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="match">Match</string>
+    <string name="team">Team</string>
+    <string name="banner_team">Banner Team</string>
+
+    <string name="title_activity_detail_team">DetailTeamActivity</string>
+    <string name="image_player">Image Player</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="no_favorite_team">No Favorite Team</string>
+    <string name="search">Search</string>
+</resources>

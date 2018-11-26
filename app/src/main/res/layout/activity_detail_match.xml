@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/global_padding">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="5dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/overview"
+                    android:textColor="@color/colorText"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/colorText" />
+
+                <TextView
+                    android:id="@+id/detail_tanggal"
+                    style="@style/textViewDetailEvent.Tanggal"
+                    tools:text="Date" />
+
+                <TextView
+                    android:id="@+id/detail_time"
+                    style="@style/textViewDetailEvent.Time"
+                    tools:text="Time" />
+
+                <TableRow style="@style/containerDetailEvent">
+
+                    <ImageView
+                        android:id="@+id/bannerHomeTeam"
+                        style="@style/imgViewDetailEvent"
+                        android:contentDescription="@string/bannerhometeam"
+                        tools:src="@color/colorAccent" />
+
+                    <TextView
+                        android:id="@+id/scoreDetailHomeTeam"
+                        style="@style/textViewDetailEvent.score"
+                        tools:text="0" />
+
+                    <TextView
+                        style="@style/textViewDetailEvent.versus"
+                        android:text="@string/versus" />
+
+                    <TextView
+                        android:id="@+id/scoreDetailAwayTeam"
+                        style="@style/textViewDetailEvent.score"
+                        tools:text="0" />
+
+                    <ImageView
+                        android:id="@+id/bannerAwayTeam"
+                        style="@style/imgViewDetailEvent"
+                        android:contentDescription="@string/bannerawayteam"
+                        tools:src="@color/colorAccent" />
+                </TableRow>
+
+            </TableLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="5dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/statistics"
+                    android:textColor="@color/colorText"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/colorText" />
+
+
+                <TableRow style="@style/containerDetailEvent">
+
+                    <TextView
+                        android:id="@+id/goalsHomeTeam"
+                        style="@style/textViewDetailEvent.left"
+                        tools:text="-" />
+
+                    <TextView
+                        style="@style/textViewDetailEvent.center"
+                        android:text="@string/goals" />
+
+                    <TextView
+                        android:id="@+id/goalsAwayTeam"
+                        style="@style/textViewDetailEvent.right"
+                        tools:text="-" />
+                </TableRow>
+
+                <TableRow style="@style/containerDetailEvent">
+
+                    <TextView
+                        android:id="@+id/shootsHomeTeam"
+                        style="@style/textViewDetailEvent.left"
+                        tools:text="-" />
+
+                    <TextView
+                        style="@style/textViewDetailEvent.center"
+                        android:text="@string/shoots" />
+
+                    <TextView
+                        android:id="@+id/shootsAwayTeam"
+                        style="@style/textViewDetailEvent.right"
+                        tools:text="-" />
+                </TableRow>
+
+                <TableRow style="@style/containerDetailEvent">
+
+                    <TextView
+                        android:id="@+id/yellowCardsHomeTeam"
+                        style="@style/textViewDetailEvent.left"
+                        tools:text="-" />
+
+                    <TextView
+                        style="@style/textViewDetailEvent.center"
+                        android:text="@string/yellow_cards" />
+
+                    <TextView
+                        android:id="@+id/yellowCardsAwayTeam"
+                        style="@style/textViewDetailEvent.right"
+                        tools:text="-" />
+                </TableRow>
+
+                <TableRow style="@style/containerDetailEvent">
+
+                    <TextView
+                        android:id="@+id/redCardsHomeTeam"
+                        style="@style/textViewDetailEvent.left"
+                        tools:text="-" />
+
+                    <TextView
+                        style="@style/textViewDetailEvent.center"
+                        android:text="@string/red_cards" />
+
+                    <TextView
+                        android:id="@+id/redCardsAwayTeam"
+                        style="@style/textViewDetailEvent.right"
+                        tools:text="-" />
+                </TableRow>
+            </TableLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="5dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/line_up"
+                    android:textColor="@color/colorText"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/colorText" />
+
+
+                <TableRow style="@style/containerDetailEvent">
+
+                    <TextView
+                        android:id="@+id/goalKeeperHomeTeam"
+                        style="@style/textViewDetailEvent.left"
+                        tools:text="-" />
+
+                    <TextView
+                        style="@style/textViewDetailEvent.center"
+                        android:text="@string/goalkeeper" />
+
+                    <TextView
+                        android:id="@+id/goalKeeperAwayTeam"
+                        style="@style/textViewDetailEvent.right"
+                        tools:text="-" />
+                </TableRow>
+
+                <TableRow style="@style/containerDetailEvent">
+
+                    <TextView
+                        android:id="@+id/defenseHomeTeam"
+                        style="@style/textViewDetailEvent.left"
+                        tools:text="-" />
+
+                    <TextView
+                        style="@style/textViewDetailEvent.center"
+                        android:text="@string/defense" />
+
+                    <TextView
+                        android:id="@+id/defenseAwayTeam"
+                        style="@style/textViewDetailEvent.right"
+                        tools:text="-" />
+                </TableRow>
+
+                <TableRow style="@style/containerDetailEvent">
+
+                    <TextView
+                        android:id="@+id/midFieldsHomeTeam"
+                        style="@style/textViewDetailEvent.left"
+                        tools:text="-" />
+
+                    <TextView
+                        style="@style/textViewDetailEvent.center"
+                        android:text="@string/midfield" />
+
+                    <TextView
+                        android:id="@+id/midFieldAwayTeam"
+                        style="@style/textViewDetailEvent.right"
+                        tools:text="-" />
+                </TableRow>
+
+                <TableRow style="@style/containerDetailEvent">
+
+                    <TextView
+                        android:id="@+id/forwardHomeTeam"
+                        style="@style/textViewDetailEvent.left"
+                        tools:text="-" />
+
+                    <TextView
+                        style="@style/textViewDetailEvent.center"
+                        android:text="@string/forward" />
+
+                    <TextView
+                        android:id="@+id/forwardAwayTeam"
+                        style="@style/textViewDetailEvent.right"
+                        tools:text="-" />
+                </TableRow>
+
+                <TableRow style="@style/containerDetailEvent">
+
+                    <TextView
+                        android:id="@+id/subtituteHomeTeam"
+                        style="@style/textViewDetailEvent.left"
+                        tools:text="-" />
+
+                    <TextView
+                        style="@style/textViewDetailEvent.center"
+                        android:text="@string/subtitutes" />
+
+                    <TextView
+                        android:id="@+id/subtituteAwayTeam"
+                        style="@style/textViewDetailEvent.right"
+                        tools:text="-" />
+                </TableRow>
+
+            </TableLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>
